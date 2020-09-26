@@ -1,0 +1,4 @@
+name: '${project.artifactId}'
+main: '${project.groupId}.Chat'
+version: '${project.version}'
+author: 'Braayy'

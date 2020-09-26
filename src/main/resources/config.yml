@@ -1,0 +1,33 @@
+chat-format:
+  common: '&7{player}: {message}'
+  regional:
+    local: '&7[L] {player}: {message}'
+    global: '&7[G] {player}: {message}'
+
+# Options: GLOBAL or REGIONAL
+#  GLOBAL: Everyone receives the message and there is no local chat
+#  REGIONAL: There is a local chat(in the player radius) and a global chat(/g <message> or /global <message>)
+chat-type: REGIONAL
+
+local:
+  # The radius of the local chat in blocks
+  radius: 40
+
+global:
+  # The price for speaking in the global chat
+  # Let it 0 to no-price
+  price: 0
+
+# The minimum time to send a message in seconds
+anti-spam-rate: 5
+
+# Put the words in lower case
+blocked-words: []
+
+messages:
+  no-money: '&cYou don''t have enough money to say on global chat'
+  no-permission: '&cYou don''t have permission to do this!'
+  enable-chat: '&aYou''ve enabled the chat'
+  disable-chat: '&cYou''ve disabled the chat'
+  disabled-chat: '&cThe chat is disabled'
+  anti-spam: '&cWait at least 5 seconds to send another message'
